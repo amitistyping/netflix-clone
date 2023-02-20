@@ -1,0 +1,30 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav__black {
+    background: linear-gradient(180deg, rgba(0,0,0,0.8856792717086834) 0%, rgba(15,13,13,0.4150910364145658) 35%, rgba(255,255,255,0) 98%);
+}
+
+.nav__contents {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+}
