@@ -1,6 +1,8 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import Banner from '../Banner/Banner';
+import Row from '../Row/Row';
+import { requestsWithAttr } from './homeScreenConstants';
 import './homescreen.css';
 
 const HomeScreen = () => {
@@ -8,7 +10,14 @@ const HomeScreen = () => {
 		<div className='homescreen'>
 			<Nav />
 			<Banner />
-			HomeScreen
+			{requestsWithAttr.map((requestWithAttr) => (
+				<Row
+					key={requestWithAttr.id}
+					title={requestWithAttr.title}
+					fetchURL={requestWithAttr.fetchURL}
+					isLargeRow={requestWithAttr.isLargeRow}
+				/>
+			))}
 		</div>
 	);
 };
