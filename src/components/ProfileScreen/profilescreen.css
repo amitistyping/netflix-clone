@@ -1,0 +1,47 @@
+.profileScreen__body {
+    color: white;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profileScreen__bodyContent {
+    width: 30%;
+    padding-top: 50px;
+}
+
+.profileScreen__infoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profileScreen__info {
+    width: 80%;
+}
+
+.profileScreen__info>p {
+    margin-top: 0px;
+    background-color: grey;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.profileScreen__info>button {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #E50914;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.profileScreen__avatar>img {
+    width: 80px;
+    object-fit: contain;
+}

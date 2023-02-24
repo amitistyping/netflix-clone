@@ -32,7 +32,7 @@ class Banner extends React.Component {
 						style={{
 							backgroundSize: 'cover',
 							backgroundImage: `url("https://image.tmdb.org/t/p/original/${this.state.movie.backdrop_path}")`,
-							backgroundPosition: 'center center',
+							backgroundPosition: 'top',
 						}}
 					>
 						<div className='banner__contents'>

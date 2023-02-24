@@ -12,7 +12,7 @@ const HomeScreen = () => {
 			<Banner />
 			{requestsWithAttr.map((requestWithAttr) => (
 				<Row
-					key={requestWithAttr.id}
+					key={requestWithAttr.title}
 					title={requestWithAttr.title}
 					fetchURL={requestWithAttr.fetchURL}
 					isLargeRow={requestWithAttr.isLargeRow}
