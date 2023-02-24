@@ -18,7 +18,7 @@ function App() {
 				console.log(userAuth.uid, userAuth.email);
 				dispatch(login({ uid: userAuth.uid, email: userAuth.email }));
 			} else {
-				dispatch(logout);
+				dispatch(logout());
 			}
 		});
 		return unsubscribe;
